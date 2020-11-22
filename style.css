@@ -54,7 +54,44 @@ body {
   background-color: #3e3e40;
   left: 14px;
   bottom: -19px;
-  border-radius: 0 0 5px;
+  border-radius: 0 0 5px 5px;
 }
 
-.clock .clock-body
+.clock .clock-body {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 9px;
+  background-color: #3e3e40;
+  left: 14px;
+  bottom: -19px;
+  border-radius: 0 0 5px 5px;
+
+}
+
+.clock .clock-body>div {
+  color: #69ff74;
+  font-size: 70px;
+  line-height: 1.2;
+  letter-spacing: 6px;
+
+
+}
+
+#seconds {
+  opacity: 0;
+  animation: animate 1s infinite;
+
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
