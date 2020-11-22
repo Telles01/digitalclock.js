@@ -46,7 +46,15 @@ body {
 
 }
 
-
-.clock-body{
-
+.clock .clock-body::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 9px;
+  background-color: #3e3e40;
+  left: 14px;
+  bottom: -19px;
+  border-radius: 0 0 5px;
 }
+
+.clock .clock-body
